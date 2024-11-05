@@ -2,6 +2,8 @@
 
 **Project Progress** is an Electron-based application designed to help users manage their tasks efficiently. It provides a clean and user-friendly interface for adding, updating, and deleting tasks, ensuring you stay organized and productive.
 
+![preview](https://github.com/user-attachments/assets/e4573015-124e-4ada-a8bb-5845bdaf2b27)
+
 ## Features
 - Add new tasks easily with a clean, intuitive design.
 - Edit and delete existing tasks with ease.
