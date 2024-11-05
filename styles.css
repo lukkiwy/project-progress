@@ -1,0 +1,359 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #1a1a1f;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.logo {
+    width: 210px;
+    margin: 19px;
+    position: fixed;
+    background-color: transparent;
+}
+/*Confirm window*/
+#confirm-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+#confirm-window {
+  height: 15vh;
+  width: 20vw;
+  min-height: 120px;
+  min-width: 200px;
+  background-color: #292c34;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 10px;
+  text-align: center;
+}
+#confirm-question {
+  position: absolute;
+  top: 25%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+}
+
+#confirm-button-container {
+  height: 35px;
+  width: 140px;
+  position: absolute;
+  bottom: 20%;
+  background-color: transparent;
+}
+
+#confirm-cancel-button, #confirm-delete-button {
+  border-style: none;
+  height: 35px;
+  width: 65px;
+  border-radius: 100px;
+  position: absolute;
+  color: white;
+  font-size: 1em;
+}
+
+#confirm-cancel-button:hover, #confirm-delete-button:hover {
+  background-color: #00CCFFFF;
+  color: black;
+}
+
+#confirm-cancel-button {
+  left: 0;
+}
+#confirm-delete-button {
+  right: 0;
+}
+
+/* Folder styles */
+#folder-container {
+  width: 90%;
+  min-height: 700px;
+  height: 120vh;
+  margin-top: 7vh;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 0px 80px;
+  scrollbar-width: none;
+}
+
+#folder-container::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari и Opera */
+}
+
+.folder {
+  height: 80vh;
+  min-width: 600px;
+  width: 30vw;
+  margin: 50px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: solid 2px;
+  border-color: white;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.task-container {
+  height: 90%;
+  width: 100%;
+  top: 70px;
+  text-align: center;
+  background-color: transparent;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.folder-scroll {
+  margin-top: 20px;
+  overflow-y: auto;
+  height: 780px;
+  text-align: left;
+}
+
+.folder-name {
+  position: relative;
+  border-style: none;
+  outline: none;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  height: 70px;
+  width: 60%;
+  resize: none;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+/* Button styles */
+
+.create-task-button {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  background-color: #292c34;
+}
+.save-button {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit-button {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #292c34;
+}
+
+.save-img, .edit-img, .delete-img, .create-img  {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.button, #create-folder-button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  color: white;
+}
+
+#create-folder-button {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+  background-color: #292c34;
+}
+
+.edit-task-button {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+
+}
+.save-task-button {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}
+
+.delete-task-button {
+  position: absolute;
+  right: 20px;
+  top: 65px;
+}
+
+.button:hover, #create-folder-button:hover, .scale-minus-button:hover, .scale-plus-button:hover {
+  background-color: #00ccff;
+  color: black;
+}
+
+.delete-button:hover, .delete-task-button:hover {
+    background-color: #e00034;
+}
+
+.scale-number-container {
+  height: 20px;
+  width: 80px;
+  background-color: transparent;
+  position: absolute;
+  top: 10%;
+  right: 32%;
+}
+
+.scale-minus-button, .scale-plus-button, .scale-number {
+  position: absolute;
+  border-style: none;
+  border-radius: 100px;
+  color: white;
+}
+
+.scale-minus-button {
+  left: 0px;
+  height: 20px;
+  width: 20px;
+}
+
+.scale-plus-button {
+  right: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.scale-number {
+  width: 30px;
+  height: 20px;
+  left: 25px;
+  text-align: center;
+  outline-style: none;
+}
+
+.scale-name {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  width: 52%;
+  height: 20px;
+  resize: none;
+  color: white;
+  border-style: none;
+  border-radius: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Project styles */
+.task {
+  height: 120px;
+  width: 95%;
+  margin: 2.5%;
+  font-size: 18px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #292c34;
+  color: white;
+  position: relative;
+}
+
+.task-name {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  height: 60px;
+  width: 150px;
+  margin-left: 2%;
+  border-style: none;
+  outline: none;
+  resize: none;
+  background-color: #292c34;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Scale styles */
+.scale {
+  background-color: #292c34;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 108%;
+  border-radius: 100px;
+  margin-left: -15px;
+}
+.scale-container {
+  position: absolute;
+  right: 70px;
+  top: 40px;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 55%;
+  border-radius: 100px;
+}
+.scale-number::-webkit-outer-spin-button, .scale-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.scale-dividing {
+  flex: 1 1 auto;
+  height: 40px;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #3f5359;
+  transform: skew(-30deg);
+}
+
+/* Colors */
+.c1 {
+  background-color: #00ccff;
+}
+
+.c2 {
+  background-color: #004e62;
+}
+
+.c3 {
+  background-color: #ffffff;
+}

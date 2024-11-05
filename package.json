@@ -1,0 +1,28 @@
+{
+  "name": "projectprogress",
+  "productName": "Project Progress",
+  "description": "Project Progress",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Lukkiwy",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "31.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "build": {
+    "icon": "./assets/icons/icon.ico",
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "assets/**/*",
+	  "styles.css"
+    ]
+  }
+}

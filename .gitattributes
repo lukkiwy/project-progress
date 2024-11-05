@@ -1,0 +1,2 @@
+dist/Project Progress Setup 1.0.0.exe filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
