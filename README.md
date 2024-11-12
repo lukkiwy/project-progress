@@ -40,5 +40,3 @@ Project Progress is designed to help you manage your tasks efficiently. Here's h
 
 ## License
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
-**Note:** Testing on macOS and Linux has not been conducted; therefore, compatibility is not guaranteed on these platforms.
